@@ -1,0 +1,8 @@
+-- SELECT SUBSTRING(birth, 1, 4), COUNT(id) FROM players
+-- WHERE birth LIKE '1980%'
+
+SELECT '1980' , COUNT(id) FROM players
+WHERE birth BETWEEN '1980-1-1' AND '1980-12-31'
+UNION
+SELECT '1981' , COUNT(id) FROM players
+WHERE birth BETWEEN '1981-1-1' AND '1981-12-31'
