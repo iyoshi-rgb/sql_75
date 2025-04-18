@@ -1,4 +1,4 @@
-SELECT 
+`SELECT 
     customers.customer_id,
     (
         SELECT COALESCE(SUM(o1.total_amount), 0)
@@ -36,4 +36,4 @@ SELECT
 FROM customers
 WHERE customers.city LIKE 'N%' 
    OR customers.city LIKE 'S%' 
-   OR customers.city LIKE 'L%';
+   OR customers.city LIKE 'L%';`
